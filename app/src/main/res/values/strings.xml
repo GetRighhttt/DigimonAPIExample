@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StefanBayneFinalProject</string>
+    <string name="digimon">Digimon!</string>
+    <string name="quote">"I have a foolproof plan: first we’ll eat something, then after that…I’m open to suggestions!" – Taichi Yagami</string>
+    <string name="all_digimon">All</string>
+    <string name="name">Name</string>
+    <string name="level">Level</string>
+    <string name="how_would_you_like_to_search_for_digimon_by">How would you like to search for Digimon? By:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_digimon_below">All Digimon Below:</string>
+    <string name="Level">Level</string>
+    <string name="Name">Name</string>
+    <string name="digimonName">デジタルモンスタ</string>
+    <string name="digimon111"><![CDATA[Digimon! :)>]]></string>
+</resources>
