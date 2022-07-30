@@ -11,7 +11,7 @@
         android:id="@+id/fragment_container_activity_test"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.stefanbaynefinalproject.view.AllDigimon"/>
+        android:name="com.example.stefanbaynefinalproject.fragment.AllDigimon"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

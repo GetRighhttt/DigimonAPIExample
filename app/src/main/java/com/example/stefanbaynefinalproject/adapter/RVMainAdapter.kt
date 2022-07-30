@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.view
+package com.example.stefanbaynefinalproject.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.stefanbaynefinalproject.R
-import com.example.stefanbaynefinalproject.model.RvMainListItem
+import com.example.stefanbaynefinalproject.recyclerviewlistitem.RvMainListItem
 
 /**
  * This is the first adapter for the first RecyclerView on the main page.
@@ -21,14 +21,14 @@ class RVMainAdapter(private val imageListItem: List<RvMainListItem>)
         val rvItemView: ImageView = itemView.findViewById(R.id.imageView)
     }
 
-    // Creates the Views
+    // Creates the ViewHolder and inflates the layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RvViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.rv_main_listitem, parent, false)
         return RvViewHolder(view)
     }
 
-    // Bind the view to the position
+    // Bind the views to the position in the list, and set the imageResource to populate
     override fun onBindViewHolder(holder: RvViewHolder, position: Int) {
         val digimon = imageListItem[position]
         holder.rvItemView.setImageResource(digimon.imageRV)

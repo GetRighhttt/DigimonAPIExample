@@ -26,10 +26,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
-import com.bumptech.glide.Glide.init
 import com.example.stefanbaynefinalproject.R
-import com.example.stefanbaynefinalproject.model.ListDigimonCharacters
-import com.example.stefanbaynefinalproject.model.RvMainListItem
+import com.example.stefanbaynefinalproject.adapter.DigimonCharacterAdapter
+import com.example.stefanbaynefinalproject.adapter.RVMainAdapter
+import com.example.stefanbaynefinalproject.recyclerviewlistitem.ListDigimonCharacters
+import com.example.stefanbaynefinalproject.recyclerviewlistitem.RvMainListItem
 
 class MainActivity : AppCompatActivity() {
 

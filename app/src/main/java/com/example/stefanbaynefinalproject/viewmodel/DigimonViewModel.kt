@@ -25,7 +25,7 @@ class DigimonViewModel
 
     // method to get all the DigimonData and use Coroutines to suspend the operation
     // to another thread.
-    fun getDigimonData() {
+    private fun getDigimonData() {
         CoroutineScope(IO).launch {
             val response = repositoryImpl.getDigiData()
             _digimonData.postValue(response)

@@ -1,8 +1,9 @@
-package com.example.stefanbaynefinalproject.viewmodel
+package com.example.stefanbaynefinalproject.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.stefanbaynefinalproject.repository.DigimonRepositoryImpl
+import com.example.stefanbaynefinalproject.viewmodel.DigimonViewModel
 import java.lang.IllegalArgumentException
 
 class DigimonViewModelFactory(private val digimonRepositoryImpl: DigimonRepositoryImpl): ViewModelProvider.Factory {

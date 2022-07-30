@@ -1,14 +1,11 @@
-package com.example.stefanbaynefinalproject.view
+package com.example.stefanbaynefinalproject.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.stefanbaynefinalproject.databinding.AllDigimonListItemBinding
 import com.example.stefanbaynefinalproject.model.Digimon
-import kotlinx.coroutines.NonDisposableHandle.parent
 
 // Adapter for RecyclerView for API call
 class AllDigimonAdapter(private val digimonListItem: List<Digimon>):
@@ -21,6 +18,7 @@ RecyclerView.Adapter<AllDigimonAdapter.AllDigimonViewHolder>() {
     ): RecyclerView.ViewHolder(binding.root)
     {
         // Call bind method to bind views to RecyclerView from API
+        // Use viewBinding to bind the views, and use Glide to pull the image from the API
         fun bind(digimon: Digimon) {
             binding.tvName.text = digimon.name.toString()
             binding.tvLevel.text = digimon.level.toString()
@@ -28,7 +26,7 @@ RecyclerView.Adapter<AllDigimonAdapter.AllDigimonViewHolder>() {
         }
     }
 
-    // Create ViewHolder
+    // Create ViewHolder, and inflate layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         AllDigimonViewHolder (
         AllDigimonListItemBinding.inflate(LayoutInflater.from(parent.context),
@@ -36,7 +34,7 @@ RecyclerView.Adapter<AllDigimonAdapter.AllDigimonViewHolder>() {
         )
 
     // Bind ViewHOlder to the position of the listitem
-    override fun onBindViewHolder(holder: AllDigimonAdapter.AllDigimonViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AllDigimonViewHolder, position: Int) {
         holder.bind(digimonListItem[position])
     }
 

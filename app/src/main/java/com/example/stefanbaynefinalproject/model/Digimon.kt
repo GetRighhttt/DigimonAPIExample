@@ -4,6 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 // Data class for Digimon from API
+// Parcelable to
 @Parcelize
 data class Digimon
     (

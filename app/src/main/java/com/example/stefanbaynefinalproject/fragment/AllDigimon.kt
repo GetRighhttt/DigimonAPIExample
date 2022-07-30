@@ -1,24 +1,24 @@
-package com.example.stefanbaynefinalproject.view
+package com.example.stefanbaynefinalproject.fragment
 
+import android.app.Fragment
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.stefanbaynefinalproject.R
 import com.example.stefanbaynefinalproject.databinding.FragmentAllDigimonBinding
 import com.example.stefanbaynefinalproject.repository.DigimonRepositoryImpl
+import com.example.stefanbaynefinalproject.adapter.AllDigimonAdapter
 import com.example.stefanbaynefinalproject.viewmodel.DigimonViewModel
-import com.example.stefanbaynefinalproject.viewmodel.DigimonViewModelFactory
+import com.example.stefanbaynefinalproject.factory.DigimonViewModelFactory
 
 /**
  * This is the fragment which will display all the Digimon from the API.
  * Unfortunately, my API didn't have any details per each digimon besides name and level.
  */
 
-class AllDigimon : Fragment() {
+class AllDigimon : androidx.fragment.app.Fragment() {
 
     // Initializing viewbinding variables
     private var _binding: FragmentAllDigimonBinding? = null
@@ -36,7 +36,8 @@ class AllDigimon : Fragment() {
         _binding = FragmentAllDigimonBinding.inflate(inflater, container, false)
 
         // Calling the viewModel to observe LiveData
-        viewModel = ViewModelProvider(this, DigimonViewModelFactory(DigimonRepositoryImpl()))[DigimonViewModel::class.java]
+        viewModel = ViewModelProvider(this,
+            DigimonViewModelFactory(DigimonRepositoryImpl()))[DigimonViewModel::class.java]
         viewModel.digimonData.observe(viewLifecycleOwner, Observer { newListChange ->
             binding.pbTest.visibility = View.GONE
             if (newListChange.isEmpty()){
