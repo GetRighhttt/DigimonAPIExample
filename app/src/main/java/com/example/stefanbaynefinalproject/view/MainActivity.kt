@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // methods used to initialize recycler views for the home page and add data to them
         init()
         initAgain()
         addDataToList()
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         val buttonOpenAll: Button = findViewById(R.id.btn_getall)
 
         /**
-         * Will initialize these buttons to the new fragments later on...
+        Will initialize these buttons to the new fragments later on...
         val buttonOpenName: Button = findViewById(R.id.btn_name)
         val buttonOpenLevel: Button = findViewById(R.id.btn_level)
         */
