@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rv_digi_all"
@@ -8,41 +7,69 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
     android:layout_marginVertical="12dp"
-    app:cardCornerRadius="15dp"
-    android:gravity="center"
+    android:background="@color/indigo_dark"
     android:elevation="15dp"
-    android:background="@color/indigo_dark">
+    android:gravity="center"
+    app:cardCornerRadius="15dp">
 
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:background="@color/indigo"
         android:gravity="center"
-        android:background="@color/indigo">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/iv_Digimon_Item"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:scaleType="fitXY"
-            android:src="@drawable/digimonc"/>
+            android:src="@drawable/digimonc" />
 
-        <TextView
-            android:id="@+id/tv_Name"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Name"
-            android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_Level"
+            <TextView
+                android:id="@+id/tv_thisName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thisname"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Name"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Level"
-            android:textSize="15sp"
-            android:textColor="@color/white" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_thisLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/levels"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Level"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
