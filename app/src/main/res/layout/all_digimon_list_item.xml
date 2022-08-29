@@ -33,7 +33,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Name"
-            android:fontFamily="casual"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:textStyle="italic"/>
@@ -43,7 +42,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Level"
-            android:fontFamily="casual"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:textStyle="italic"/>
