@@ -12,7 +12,7 @@
         android:id="@+id/tv_digimon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:elevation="20dp"
         android:text="@string/digimon"
         android:textStyle="bold"
@@ -20,7 +20,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#F8F5F5"
         android:textColorHighlight="#FDD835"
-        android:textSize="34sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/white"
+        android:background="@color/indigo"
         app:layout_constraintTop_toBottomOf="@id/tv_digimon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="5dp"
-        android:background="@color/white"
+        android:background="@color/indigo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_quote"/>
@@ -66,14 +66,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_quote"
         android:layout_marginTop="20dp"
-        android:background="@color/indigo_dark"/>
+        android:background="@drawable/gradient_background"/>
 
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="5dp"
-        android:background="@color/white"
+        android:background="@color/indigo"
         app:layout_constraintTop_toBottomOf="@id/rv_main"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -83,9 +83,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/how_would_you_like_to_search_for_digimon_by"
+        android:text="@string/get_all_digimon"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:ems="15"
         android:textAllCaps="true"
         android:textStyle="bold"
@@ -107,30 +107,14 @@
 
         <Button
             android:id="@+id/btn_getall"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/all_digimon"
             android:textColor="@color/white"
             android:textAllCaps="true"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/indigo_dark"/>
 
-        <Button
-            android:id="@+id/btn_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/name"
-            android:textColor="@color/white"
-            android:textAllCaps="true"
-            android:layout_margin="10dp"/>
-
-        <Button
-            android:id="@+id/btn_level"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/level"
-            android:textColor="@color/white"
-            android:textAllCaps="true"
-            android:layout_margin="10dp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -139,7 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="5dp"
-        android:background="@color/white"
+        android:background="@color/indigo"
         app:layout_constraintTop_toBottomOf="@id/linear_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -153,14 +137,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view4"
         android:layout_marginTop="20dp"
-        android:background="@color/indigo_dark"/>
+        android:background="@drawable/gradient_background"/>
 
     <View
         android:id="@+id/view5"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="5dp"
-        android:background="@color/white"
+        android:background="@color/indigo"
         app:layout_constraintTop_toBottomOf="@id/rv_character"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
