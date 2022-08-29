@@ -10,9 +10,8 @@ for those who are just getting started with Android.</p>
 to make the main screen look a little better.</p>
 
 ### APP PREVIEW :
-
-![2022-07-30 (21)](https://user-images.githubusercontent.com/105057858/181924738-61945bb1-86a7-439b-b661-baccaf788521.png)
+![2022-08-29](https://user-images.githubusercontent.com/105057858/187283105-b6c03d37-4792-4c2a-ade3-bb224b6f46ec.png)
 
 <hr>
 
-![2022-07-30 (22)](https://user-images.githubusercontent.com/105057858/181924739-e2f88b7f-3161-41f2-b26d-694295cab362.png)
+![2022-08-29 (1)](https://user-images.githubusercontent.com/105057858/187283119-d3571458-39a1-4de2-aa14-204f0382a21d.png)
