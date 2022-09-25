@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/gradient_background"
-    tools:context=".fragment.AllDigimon">
+    tools:context=".presentation.view.fragment.AllDigimon">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

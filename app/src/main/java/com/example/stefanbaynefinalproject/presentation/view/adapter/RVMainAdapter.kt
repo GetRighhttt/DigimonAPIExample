@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.adapter
+package com.example.stefanbaynefinalproject.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.stefanbaynefinalproject.R
-import com.example.stefanbaynefinalproject.recyclerviewlistitem.RvMainListItem
+import com.example.stefanbaynefinalproject.presentation.view.recyclerviewlistitem.RvMainListItem
 
 /**
  * This is the first adapter for the first RecyclerView on the main page.

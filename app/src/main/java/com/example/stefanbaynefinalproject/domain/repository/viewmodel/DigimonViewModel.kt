@@ -1,13 +1,10 @@
-package com.example.stefanbaynefinalproject.viewmodel
+package com.example.stefanbaynefinalproject.domain.repository.viewmodel
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.stefanbaynefinalproject.model.Digimon
-import com.example.stefanbaynefinalproject.repository.DigimonRepositoryImpl
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers.IO
+import com.example.stefanbaynefinalproject.data.model.Digimon
+import com.example.stefanbaynefinalproject.domain.repository.DigimonRepositoryImpl
 import kotlinx.coroutines.launch
 
 // ViewModel for providing AllDigimon fragment with UI elements

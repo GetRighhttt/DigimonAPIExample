@@ -1,6 +1,5 @@
-package com.example.stefanbaynefinalproject.fragment
+package com.example.stefanbaynefinalproject.presentation.view.fragment
 
-import android.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +7,10 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.stefanbaynefinalproject.databinding.FragmentAllDigimonBinding
-import com.example.stefanbaynefinalproject.repository.DigimonRepositoryImpl
-import com.example.stefanbaynefinalproject.adapter.AllDigimonAdapter
-import com.example.stefanbaynefinalproject.viewmodel.DigimonViewModel
-import com.example.stefanbaynefinalproject.factory.DigimonViewModelFactory
+import com.example.stefanbaynefinalproject.domain.repository.DigimonRepositoryImpl
+import com.example.stefanbaynefinalproject.presentation.view.adapter.AllDigimonAdapter
+import com.example.stefanbaynefinalproject.domain.repository.viewmodel.DigimonViewModel
+import com.example.stefanbaynefinalproject.domain.repository.factory.DigimonViewModelFactory
 
 /**
  * This is the fragment which will display all the Digimon from the API.

@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.model
+package com.example.stefanbaynefinalproject.data.model
 
 import retrofit2.Response
 import retrofit2.Retrofit

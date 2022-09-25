@@ -16,10 +16,10 @@
         android:theme="@style/Theme.StefanBayneFinalProject"
         tools:targetApi="31">
         <activity
-            android:name=".view.ActivityTest"
+            android:name="com.example.stefanbaynefinalproject.presentation.view.ActivityTest"
             android:exported="false" />
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.example.stefanbaynefinalproject.presentation.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

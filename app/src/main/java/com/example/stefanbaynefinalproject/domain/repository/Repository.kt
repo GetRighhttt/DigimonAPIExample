@@ -1,7 +1,7 @@
-package com.example.stefanbaynefinalproject.repository
+package com.example.stefanbaynefinalproject.domain.repository
 
-import com.example.stefanbaynefinalproject.model.Api
-import com.example.stefanbaynefinalproject.model.Digimon
+import com.example.stefanbaynefinalproject.data.model.Api
+import com.example.stefanbaynefinalproject.data.model.Digimon
 
 // Our repository to hold all the methods necessary for implementation
 interface Repository {

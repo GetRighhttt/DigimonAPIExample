@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.adapter
+package com.example.stefanbaynefinalproject.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.stefanbaynefinalproject.R
 import com.example.stefanbaynefinalproject.databinding.AllDigimonListItemBinding
-import com.example.stefanbaynefinalproject.model.Digimon
+import com.example.stefanbaynefinalproject.data.model.Digimon
 
 // Adapter for RecyclerView for API call
 class AllDigimonAdapter(private val digimonListItem: List<Digimon>) :

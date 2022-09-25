@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.view
+package com.example.stefanbaynefinalproject.presentation.view
 
 
 /**
@@ -27,10 +27,10 @@ import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
 import com.example.stefanbaynefinalproject.R
-import com.example.stefanbaynefinalproject.adapter.DigimonCharacterAdapter
-import com.example.stefanbaynefinalproject.adapter.RVMainAdapter
-import com.example.stefanbaynefinalproject.recyclerviewlistitem.ListDigimonCharacters
-import com.example.stefanbaynefinalproject.recyclerviewlistitem.RvMainListItem
+import com.example.stefanbaynefinalproject.presentation.view.adapter.DigimonCharacterAdapter
+import com.example.stefanbaynefinalproject.presentation.view.adapter.RVMainAdapter
+import com.example.stefanbaynefinalproject.presentation.view.recyclerviewlistitem.ListDigimonCharacters
+import com.example.stefanbaynefinalproject.presentation.view.recyclerviewlistitem.RvMainListItem
 
 class MainActivity : AppCompatActivity() {
 

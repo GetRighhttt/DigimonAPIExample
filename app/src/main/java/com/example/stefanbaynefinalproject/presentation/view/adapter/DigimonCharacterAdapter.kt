@@ -1,4 +1,4 @@
-package com.example.stefanbaynefinalproject.adapter
+package com.example.stefanbaynefinalproject.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.stefanbaynefinalproject.R
-import com.example.stefanbaynefinalproject.recyclerviewlistitem.ListDigimonCharacters
+import com.example.stefanbaynefinalproject.presentation.view.recyclerviewlistitem.ListDigimonCharacters
 
 // Adapter for character recyclerView
 class DigimonCharacterAdapter(private val imageForCharacters: List<ListDigimonCharacters>)
