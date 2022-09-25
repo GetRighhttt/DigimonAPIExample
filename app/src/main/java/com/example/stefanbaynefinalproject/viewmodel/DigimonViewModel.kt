@@ -3,6 +3,7 @@ package com.example.stefanbaynefinalproject.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.stefanbaynefinalproject.model.Digimon
 import com.example.stefanbaynefinalproject.repository.DigimonRepositoryImpl
 import kotlinx.coroutines.CoroutineScope
@@ -26,7 +27,7 @@ class DigimonViewModel
     // method to get all the DigimonData and use Coroutines to suspend the operation
     // to another thread.
     private fun getDigimonData() {
-        CoroutineScope(IO).launch {
+        viewModelScope.launch {
             val response = repositoryImpl.getDigiData()
             _digimonData.postValue(response)
         }
